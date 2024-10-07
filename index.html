@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepperoni Pizza Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="vol-image-cont">
+        <img id="volume" src="./assets/volume.png" alt="">
+    </div>
+
+
+    <video class="videoStyle" id="gameBack" loop  src="./assets/gameBack.mp4"  preload="auto"></video>
+    <video class="videoStyle" id="scoreBack" loop  src="./assets/scoreBack.mp4"  preload="auto"></video>
+    
+    
+    
+    <div id="hidden-container" oninput="storeName(event)">
+
+        <!-- Main Page Start -->
+        <img id="firstBackground" src="./assets/firstBackground.png" alt="">
+        <img id="disc" src="./assets/disc.png" alt="">
+        <img id="handle" src="./assets/handle.png" alt="">
+        <img id="listenToSong" src="./assets/listenToSong.png" alt="">
+        <img id="listenToSongBtn" src="./assets/listenToSongBtn.png" alt="">
+        <img id="ready" src="./assets/ready.png" alt="">
+        <img id="readyBtn" src="./assets/readyBtn.png" alt="">
+        <!-- Main Page End -->
+
+        <!-- Enter Name Page Start-->
+        <img id="doneBtn" src="./assets/doneBtn.png" alt="">
+        <img id="enterYourName" src="./assets/enterYourName.png" alt="">
+        <img id="nameRect" src="./assets/nameRect.png" alt="">
+        <img id="peproniSlice" src="./assets/peproniSlice.png" alt="">
+        <!-- Enter Name Page End-->
+
+        <!-- Count Down Page Start -->
+        <img id="goodLuck" src="./assets/goodLuck.png" alt="">
+        <img id="instruction" src="./assets/instruction.png" alt="">
+        <img id="instruction-2" src="./assets/instruction-2.png" alt="">
+        <img id="three" src="./assets/three.png" alt="">
+        <img id="two" src="./assets/two.png" alt="">
+        <img id="one" src="./assets/one.png" alt="">
+        <!-- Count Down Page End -->
+
+    
+        <img id="guitar" src="./assets/guitar.png" alt="">
+        <img id="peproniTagline" src="./assets/peproniTagline.png" alt="">
+        <img id="listenToSongBtnGamePage" src="./assets/listenToSongBtnGamePage.png" alt="">
+        <img id="restartBtn" src="./assets/restartBtn.png" alt="">
+        <img id="quitBtn" src="./assets/quitBtn.png" alt="">
+        <img id="leaderboardBtn" src="./assets/leaderboard.png" alt="">
+        <img id="playAgainBtn" src="./assets/playAgainBtn.png" alt="">
+        <!-- Main Game Back End-->
+
+        <img id="leaderboardText" src="./assets/leaderboardText.png" alt="">
+        <img id="runnerUpBack2" src="./assets/runnerUpBack2.png" alt="">
+        <img id="runnerUpBack3" src="./assets/runnerUpBack3.png" alt="">
+        <img id="runnerUpBack4" src="./assets/runnerUpBack4.png" alt="">
+        <img id="runnerUpBack5" src="./assets/runnerUpBack5.png" alt="">
+        <img id="topBack" src="./assets/topBack.png" alt="">
+
+        <img id="closeBtn" src="./assets/closeBtn.png" alt="">
+
+        <audio id="songWithoutSinger" src="./assets/Pepperoni Website Song (Without singing).mp3" controls></audio>
+        <audio id="songWithSinger" src="./assets/Pepperoni Website Song (With singing).mp3" controls></audio>
+
+
+    </div>
+
+
+    <input type="text" id="hiddenInput" />
+
+
+    <div id="main-container">
+        
+        <canvas id="canvas">
+            
+        </canvas>
+
+    </div>
+
+    
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script  src="./script.js" ></script>
+
+</html>
